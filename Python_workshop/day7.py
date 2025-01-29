@@ -108,32 +108,32 @@
 #########################################################################################################
 
 
-def fibonacci(n):
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [0]
-    elif n == 2:
-        return [0, 1]
-    else:
-        fib_series = fibonacci(n - 1)
-        fib_series.append(fib_series[-1] + fib_series[-2])
-        return fib_series
+# def fibonacci(n):
+#     if n <= 0:
+#         return []
+#     elif n == 1:
+#         return [0]
+#     elif n == 2:
+#         return [0, 1]
+#     else:
+#         fib_series = fibonacci(n - 1)
+#         fib_series.append(fib_series[-1] + fib_series[-2])
+#         return fib_series
 
-print(fibonacci(10))  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+# print(fibonacci(10))  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 #############################################################################################3
 
-def printPrime(limit):
-    def isPrime(n):
-        if n <= 1:
-            return False
-        for i in range(2, n):
-            if n % i == 0:
-                return False
-        return True
-    for i in range(limit+1):
-        if isPrime(i):
-            print(i)
+# def printPrime(limit):
+#     def isPrime(n):
+#         if n <= 1:
+#             return False
+#         for i in range(2, n):
+#             if n % i == 0:
+#                 return False
+#         return True
+#     for i in range(limit+1):
+#         if isPrime(i):
+#             print(i)
             
-printPrime(100)  # Output: 2, 3, 5, 7
+# printPrime(100)  # Output: 2, 3, 5
